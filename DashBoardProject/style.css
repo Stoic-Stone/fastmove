@@ -1,0 +1,253 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/footer.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+.img-box img {
+    width: 100%;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h2 {
+    font-size: 20px;
+}
+
+.menu {
+    background-color: #1F1F2E;
+    width: 60px;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.4s;
+}
+
+ul li a:hover,
+.active,
+.data-info .box:hover,
+td:hover {
+    background-color: #f50038;
+    box-shadow: -1px 1px 42px 1px rgba(220, 53, 69, 0.98);
+    -webkit-box-shadow: -1px 1px 42px 1px rgba(220, 53, 69, 0.98);
+    -moz-box-shadow: -1px 1px 42px 1px rgba(220, 53, 69, 0.98);
+    transform: scale(1.03);
+}
+
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a {
+    background-color: #a00;
+}
+
+ul li a i {
+    font-size: 30px;
+}
+
+.content {
+    width: 100%;
+    margin: 10px;
+}
+
+.title-info {
+    background-color: #f50038;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+    margin-top: 40px;
+    font-size: x-large;
+}
+
+.body-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.chart {
+    padding: 2rem;
+    border: 1px solid #f50038;
+    border-radius: 1rem;
+    box-shadow: 0 0 16px #000;
+}
+
+.chart-position {
+    display: flex;
+    justify-content: space-between;
+    left: 60%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.livrer {
+    background-color: #0a9c36;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 10px 50px;
+    margin-top: 40px;
+    font-size: xx-large;
+}
+
+.livrer:hover {
+    background-color: #0a9c36;
+    box-shadow: -1px 1px 42px 1px #0a9c36;
+    -webkit-box-shadow: -1px 1px 42px 1px #0a9c36;
+    -moz-box-shadow: -1px 1px 42px 1px #0a9c36;
+    transform: scale(1.03);
+    text-decoration: none;
+}
+
+
+.profile-title {
+    background-color: #1F1F2E;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.data-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.data-info .boxs-display{
+    display: grid;
+    gap: 10px;
+}
+
+.data-info .boxs-display .box {
+    height: 150px;
+    flex-grow: 1;
+    flex-basis: 150px;
+    border-radius: 8px;
+    background-color: #1F1F2E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 550%;
+}
+
+.data-info .box i {
+    font-size: 60px;
+}
+
+.data-info .box .data {
+    text-align: center;
+}
+
+.data-info .box .data span {
+    font-size: 30px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+td,
+th {
+    background-color: #1F1F2E;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+th {
+    background-color: #f50038;
+}
+
+
+
+.price {
+    background-color: green;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.etat {
+    font-weight: bold;
+    color: #1F1F2E;
+    background-color: #00ffff;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.status {
+    font-weight: bold;
+    color: #1F1F2E;
+    background-color: #d1cfcf;
+    border-radius: 6px;
+    padding: 6px;
+}
